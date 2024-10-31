@@ -1,0 +1,60 @@
+./streams file.txt "wc -l" file2.txt
+
+    Input file:
+
+    total 24
+    -rw------- 1 dylw dylw     0 Oct 28 22:50 file2.txt
+    -rw-rw-r-- 1 dylw dylw     0 Oct 28 23:00 file.txt
+    -rw------- 1 dylw dylw     0 Oct 28 22:23 -l
+    -rw-rw-r-- 1 dylw dylw    94 Oct 28 16:14 Makefile
+    -rwxrwxr-x 1 dylw dylw 16088 Oct 28 22:50 streams
+    -rw-rw-r-- 1 dylw dylw  2246 Oct 28 22:50 streams.c
+
+    Output file:
+
+    7
+
+./streams file.txt "grep dylw" file2.txt
+
+    Input file:
+
+    total 24
+    -rw------- 1 dylw dylw     0 Oct 28 22:50 file2.txt
+    -rw-rw-r-- 1 dylw dylw     0 Oct 28 23:00 file.txt
+    -rw------- 1 dylw dylw     0 Oct 28 22:23 -l
+    -rw-rw-r-- 1 dylw dylw    94 Oct 28 16:14 Makefile
+    -rwxrwxr-x 1 dylw dylw 16088 Oct 28 22:50 streams
+    -rw-rw-r-- 1 dylw dylw  2246 Oct 28 22:50 streams.c
+
+    Output file:
+
+    -rw------- 1 dylw dylw     0 Oct 28 22:50 file2.txt
+    -rw-rw-r-- 1 dylw dylw     0 Oct 28 23:00 file.txt
+    -rw------- 1 dylw dylw     0 Oct 28 22:23 -l
+    -rw-rw-r-- 1 dylw dylw    94 Oct 28 16:14 Makefile
+    -rwxrwxr-x 1 dylw dylw 16088 Oct 28 22:50 streams
+    -rw-rw-r-- 1 dylw dylw  2246 Oct 28 22:50 streams.c
+
+
+./streams file.txt "sort" file2.txt
+
+    Input file:
+
+    banana
+    orange
+    apple
+    pear
+    strawberry
+    watermelon
+    lemon
+
+    Output file:
+
+    apple
+    banana
+    lemon
+    orange
+    pear
+    strawberry
+    watermelon
+
